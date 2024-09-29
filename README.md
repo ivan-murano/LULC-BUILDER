@@ -1,4 +1,4 @@
-[![logo](https://i.postimg.cc/kgK7PCwT/Frame-51.png)](https://postimg.cc/rDVB5vB4)
+[![lumap-logo-black.png](https://i.postimg.cc/RVyqztbC/lumap-logo-black.png)](https://postimg.cc/hf8KLXBN)
 # LUMAP: semi-automatic Land Use MAPping for HWLEM Model
 ## Introduction
 LUMAP is intended to provide land use/land cover creators with a set of QGIS tools to facilitate their tasks. It is meant for the preparation of land use and land cover to perform simulations with the heatwave and pluvial flood models by [PLINIVS](http://plinivs.it/home/).
