@@ -1,0 +1,169 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="native:fieldcalculator_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:fieldcalculator" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="444.8" type="double"/>
+        <Option name="component_pos_y" value="82.2" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Calcolatore di campi" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="244.8" type="double"/>
+      <Option name="component_pos_y" value="127.2" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:fieldcalculator_1" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="Categorie Urban Atlas" type="Map">
+          <Option name="child_id" value="native:fieldcalculator_1" type="QString"/>
+          <Option name="color" value="" type="QString"/>
+          <Option name="comment" type="Map">
+            <Option name="color" value="" type="QString"/>
+            <Option name="component_description" value="" type="QString"/>
+            <Option name="component_height" value="60" type="double"/>
+            <Option name="component_pos_x" value="0" type="double"/>
+            <Option name="component_pos_y" value="0" type="double"/>
+            <Option name="component_width" value="100" type="double"/>
+            <Option name="outputs_collapsed" value="true" type="bool"/>
+            <Option name="parameters_collapsed" value="true" type="bool"/>
+          </Option>
+          <Option name="component_description" value="Categorie Urban Atlas" type="QString"/>
+          <Option name="component_height" value="30" type="double"/>
+          <Option name="component_pos_x" value="444.8" type="double"/>
+          <Option name="component_pos_y" value="172.2" type="double"/>
+          <Option name="component_width" value="200" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" value="false" type="bool"/>
+          <Option name="name" value="Categorie Urban Atlas" type="QString"/>
+          <Option name="output_name" value="OUTPUT" type="QString"/>
+          <Option name="outputs_collapsed" value="true" type="bool"/>
+          <Option name="parameters_collapsed" value="true" type="bool"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELD_LENGTH" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="4" type="int"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="classref" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_PRECISION" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_TYPE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="FORMULA" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="CASE &#xd;&#xa;WHEN &quot;class_2018&quot; IN ('Pastures','Mineral extraction and dump sites', 'Open spaces with little or no vegetation (beaches, dunes, bare rocks, glaciers)') &#xd;&#xa;THEN 2&#xd;&#xa;WHEN &quot;class_2018&quot; IN ('Permanent crops (vineyards, fruit trees, olive groves)')&#xd;&#xa;THEN 1&#xd;&#xa;WHEN &quot;class_2018&quot; IN ('Continuous urban fabric (S.L. : > 80%)','Discontinuous dense urban fabric (S.L. : 50% -  80%)','Industrial, commercial, public, military and private units','Construction sites','Port areas')&#xd;&#xa;THEN 4&#xd;&#xa;WHEN &quot;class_2018&quot; IN ('Sports and leisure facilities')&#xd;&#xa;THEN 7&#xd;&#xa;WHEN &quot;class_2018&quot; IN ('Airports','Arable land (annual crops)','Green urban areas','Land without current use','Discontinuous low density urban fabric (S.L. : 10% - 30%)','Discontinuous medium density urban fabric (S.L. : 30% - 50%)','Discontinuous very low density urban fabric (S.L. : &lt; 10%)','Herbaceous vegetation associations (natural grassland, moors...)')&#xd;&#xa;THEN 9&#xd;&#xa;WHEN &quot;class_2018&quot; IN ('Forests')&#xd;&#xa;THEN 8&#xd;&#xa;WHEN &quot;class_2018&quot; IN ('Water')&#xd;&#xa;THEN 10&#xd;&#xa;WHEN &quot;class_2018&quot; IN ('Railways and associated land')&#xd;&#xa;THEN 5&#xd;&#xa;WHEN &quot;classref&quot; IN ('Other roads and associated land')&#xd;&#xa;THEN 6&#xd;&#xa;ELSE &quot;classref&quot;&#xd;&#xa;END" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="IT005L3_PALERMO_UA2018_v013_IT005L3_PALERMO_UA2018_2f2800e3_e1d2_4387_8d2b_b5e3380e1502" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="designerParameterValues" type="Map">
+    <Option name="UrbanAtlas" value="Calcolato_fc5688cb_fc87_4f7d_a695_7abaaca1d5e1" type="QString"/>
+    <Option name="VERBOSE_LOG" value="true" type="bool"/>
+    <Option name="native:fieldcalculator_1:Categorie Urban Atlas" type="QgsProcessingOutputLayerDefinition">
+      <Option type="Map">
+        <Option name="create_options" type="Map">
+          <Option name="fileEncoding" value="windows-1252" type="QString"/>
+        </Option>
+        <Option name="sink" type="Map">
+          <Option name="active" value="true" type="bool"/>
+          <Option name="type" value="1" type="int"/>
+          <Option name="val" value="TEMPORARY_OUTPUT" type="QString"/>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="groupBoxes"/>
+  <Option name="help"/>
+  <Option name="modelVariables"/>
+  <Option name="model_group" value="LUMAP" type="QString"/>
+  <Option name="model_name" value="Categorie Urban Atlas" type="QString"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="UrbanAtlas" type="Map">
+      <Option name="data_types" type="List">
+        <Option value="2" type="int"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option name="description" value="Urban Atlas" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="" type="QString"/>
+      <Option name="metadata"/>
+      <Option name="name" value="UrbanAtlas" type="QString"/>
+      <Option name="parameter_type" value="vector" type="QString"/>
+    </Option>
+    <Option name="native:fieldcalculator_1:Categorie Urban Atlas" type="Map">
+      <Option name="create_by_default" value="true" type="bool"/>
+      <Option name="data_type" value="-1" type="int"/>
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option name="description" value="Categorie Urban Atlas" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="" type="QString"/>
+      <Option name="metadata"/>
+      <Option name="name" value="native:fieldcalculator_1:Categorie Urban Atlas" type="QString"/>
+      <Option name="parameter_type" value="sink" type="QString"/>
+      <Option name="supports_append" value="true" type="bool"/>
+      <Option name="supports_non_file_outputs" value="true" type="bool"/>
+    </Option>
+  </Option>
+  <Option name="parameterOrder"/>
+  <Option name="parameters" type="Map">
+    <Option name="UrbanAtlas" type="Map">
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="382.4" type="double"/>
+        <Option name="component_pos_y" value="88.6" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="UrbanAtlas" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="112.79999999999998" type="double"/>
+      <Option name="component_pos_y" value="71.19999999999999" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="name" value="UrbanAtlas" type="QString"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+    </Option>
+  </Option>
+</Option>

@@ -1,0 +1,154 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="native:fieldcalculator_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:fieldcalculator" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="657.6" type="double"/>
+        <Option name="component_pos_y" value="109.4" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Calcolatore di campi" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="521.6000000000001" type="double"/>
+      <Option name="component_pos_y" value="154.4" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:fieldcalculator_1" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="Carta della natura riclassificato" type="Map">
+          <Option name="child_id" value="native:fieldcalculator_1" type="QString"/>
+          <Option name="color" value="" type="QString"/>
+          <Option name="comment" type="Map">
+            <Option name="color" value="" type="QString"/>
+            <Option name="component_description" value="" type="QString"/>
+            <Option name="component_height" value="60" type="double"/>
+            <Option name="component_pos_x" value="0" type="double"/>
+            <Option name="component_pos_y" value="0" type="double"/>
+            <Option name="component_width" value="100" type="double"/>
+            <Option name="outputs_collapsed" value="true" type="bool"/>
+            <Option name="parameters_collapsed" value="true" type="bool"/>
+          </Option>
+          <Option name="component_description" value="Carta della natura riclassificato" type="QString"/>
+          <Option name="component_height" value="30" type="double"/>
+          <Option name="component_pos_x" value="721.6000000000001" type="double"/>
+          <Option name="component_pos_y" value="199.4" type="double"/>
+          <Option name="component_width" value="200" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" value="false" type="bool"/>
+          <Option name="name" value="Carta della natura riclassificato" type="QString"/>
+          <Option name="output_name" value="OUTPUT" type="QString"/>
+          <Option name="outputs_collapsed" value="true" type="bool"/>
+          <Option name="parameters_collapsed" value="true" type="bool"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELD_LENGTH" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="4" type="int"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="classref" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_PRECISION" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_TYPE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="FORMULA" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="CASE&#xd;&#xa;WHEN &quot;nomeclasse&quot; IN ('Colture di tipo estensivo e sistemi agricoli complessi', 'Formazioni ad Ampelodesmus mauritanicus', 'Formazioni ad Euphorbia dendroides', 'Seminativi intensivi e continui', 'Vigneti') THEN 1&#xd;&#xa;WHEN &quot;nomeclasse&quot; IN ('Agrumeti', 'Boscaglia a quercia spinosa', 'Foreste mediterranee ripariali a pioppo', 'Formazioni a palma nana', 'Gallerie a tamerice e oleandri', 'Grandi parchi', 'Leccete sud-italiane e siciliane', 'Oliveti', 'Piantagioni di conifere', 'Frutteti', 'Piantagioni di eucalipti', 'Prati mediterranei subnitrofili (incl. vegetazione mediterranea e submediterranea postcolturale', 'Saliceti collinari planiziali e mediterraneo montani', 'Sugherete tirreniche', 'Cañyons a platani in Sicilia', 'Cerrete sud-italiane', 'Querceti a querce caducifolie con Q. pubescens', 'Q. pubescens subsp. pubescens (=Q. virgiliana) e Q. dalechampii dell''Italia peninsulare ed insulare') THEN 8&#xd;&#xa;WHEN &quot;nomeclasse&quot; IN ('Corsi fluviali (acque correnti dei fiumi  maggiori)', 'Acque dolci (laghi, stagni)', 'Greti dei torrenti mediterranei') THEN 10&#xd;&#xa;WHEN &quot;nomeclasse&quot; IN ('Colture di tipo estensivo e sistemi agricoli complessi', 'Formazioni ad Ampelodesmus mauritanicus',  'Formazioni ad Euphorbia dendroides', 'Ginestreti collinari e submontani dellItalia peninsulare e Sicilia',  'Macchia bassa a Calicotome sp. pl.', 'Macchia bassa a olivastro e lentisco', 'Praterie montane dell''Appennino centrale e meridionale', 'Prati aridi mediterranei', 'Prati concimati e pascolati; anche abbandonati e vegetazione postcolturale', 'Prati mediterranei subnitrofili (incl. vegetazione mediterranea e submediterranea postcolturale',' Rupi basiche dei rilievi dell''Italia meridionale',' Steppe di alte erbe mediterranee',' Vegetazione dei canneti e di specie simili','Vegetazione tirrenica-submediterranea a Rubus ulmifolius', 'Dune mobili e dune bianche', 'Garighe e macchie mesomediterranee calcicole', 'Garighe e macchie mesomediterranee silicicole', 'Ghiaioni termofili calcarei della Penisola Italiana') THEN 9&#xd;&#xa;WHEN &quot;nomeclasse&quot; IN ('Scogliere e rupi marittime mediterranee', 'Spiagge', 'Cycleway', 'Footway', 'Track','Trackgrade 1', 'Trackgrade 2', 'Trackgrade 3', 'Trackgrade 4', 'Trackgrade 5', 'Aree argillose ed erosione accelerata', 'Cave') THEN 2&#xd;&#xa;ELSE &quot;classref&quot;&#xd;&#xa;END" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="CartadellaNatura" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="designerParameterValues"/>
+  <Option name="groupBoxes"/>
+  <Option name="help"/>
+  <Option name="modelVariables"/>
+  <Option name="model_group" value="LUMAP" type="QString"/>
+  <Option name="model_name" value="voci carta della natura" type="QString"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="CartadellaNatura" type="Map">
+      <Option name="data_types" type="List">
+        <Option value="2" type="int"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option name="description" value="Carta della Natura" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="" type="QString"/>
+      <Option name="metadata"/>
+      <Option name="name" value="CartadellaNatura" type="QString"/>
+      <Option name="parameter_type" value="vector" type="QString"/>
+    </Option>
+    <Option name="native:fieldcalculator_1:Carta della natura riclassificato" type="Map">
+      <Option name="create_by_default" value="true" type="bool"/>
+      <Option name="data_type" value="-1" type="int"/>
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option name="description" value="Carta della natura riclassificato" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="" type="QString"/>
+      <Option name="metadata"/>
+      <Option name="name" value="native:fieldcalculator_1:Carta della natura riclassificato" type="QString"/>
+      <Option name="parameter_type" value="sink" type="QString"/>
+      <Option name="supports_append" value="true" type="bool"/>
+      <Option name="supports_non_file_outputs" value="true" type="bool"/>
+    </Option>
+  </Option>
+  <Option name="parameterOrder"/>
+  <Option name="parameters" type="Map">
+    <Option name="CartadellaNatura" type="Map">
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="468" type="double"/>
+        <Option name="component_pos_y" value="186.20000000000002" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="CartadellaNatura" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="235.20000000000002" type="double"/>
+      <Option name="component_pos_y" value="121.60000000000002" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="name" value="CartadellaNatura" type="QString"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+    </Option>
+  </Option>
+</Option>
